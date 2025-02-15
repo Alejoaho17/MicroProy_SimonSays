@@ -1,0 +1,108 @@
+.game-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 400px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 100%;
+  padding: 6px;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.table-row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 6px;
+}
+
+.simon-says-button {
+  width: 50%;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+
+.top-left-button {
+  background-color: #72ec82;
+  border-top-left-radius: 100%;
+}
+
+.top-left-button:active,.top-left-button.click {
+  background-color: #34c047;
+  transform: scale(1.05);
+}
+
+.top-right-button {
+  background-color: #e2bb58;
+  border-top-right-radius: 100%;
+}
+
+.top-right-button:active, .top-right-button.click {
+  background-color: #b08a28;
+  transform: scale(1.05);
+}
+
+
+.bottom-left-button {
+  background-color: #ec7272;
+  border-bottom-left-radius: 100%;
+}
+
+.bottom-left-button:active, .bottom-left-button.click {
+  background-color: #b44040;
+  transform: scale(1.05);
+}
+
+.bottom-right-button {
+  background-color: #72adec;
+  border-bottom-right-radius: 100%;
+}
+
+.bottom-right-button:active, .bottom-right-button.click {
+  background-color: #35689e;
+  transform: scale(1.05);
+}
+
+#puntos {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #000000;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+@media (width < 640px) {
+  .game-title{
+    font-size: 32px;
+  }
+
+  .table {
+    width: 200px;
+    height: 200px;
+  }
+}
