@@ -32,3 +32,34 @@
   </body>
   <script src="../scripts/game.js" ></script>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+  </head>
+  <body>
+    <section class="game-container">
+      <h1 class="game-title">Simon Dice:</h1>
+
+      <div class="table">
+        <div class="table-row">
+          <button id="top-left" onclick="topLeftButtonClick()" class="simon-says-button top-left-button"></button>
+          <button id="top-right" onclick="topRightButtonClick()" class="simon-says-button top-right-button"></button>
+        </div>
+        <div class="table-row">
+          <button id="bottom-left" onclick="bottomLeftButtonClick()" class="simon-says-button bottom-left-button"></button>
+          <button id="bottom-right" onclick="bottomRightButtonClick()" class="simon-says-button bottom-right-button"></button>
+        </div>
+        <p id="puntos" >0</p>
+      </div>
+
+      <button id="play-button" class="normal-button" onclick="reproducirSecuencia()"> Reproducir secuencia </button>
+    </section>
+  </body>
+  <script src="../scripts/game.js" ></script>
+</html>
