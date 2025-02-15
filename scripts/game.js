@@ -148,3 +148,4 @@ function reproducirSecuencia(){
         }
     },1000)
 }
+

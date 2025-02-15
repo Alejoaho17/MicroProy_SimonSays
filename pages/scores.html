@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puntuacion</title>
     <link rel="stylesheet" href="../styles/scores.css">
+    <script src="../scripts/scores.js"></script>
 </head>
-<body>
+<body onload="mostrarTabla()">
+    
     <a href = "../index.html">Menu</a>
     <a href = "../pages/name.html">Jugar</a>
     <a href = "../pages/scores.html">Puntuaciones</a>
     <h1> PUNTUACIONES OBTENIDAS: </h1>
-    <p>parrafo</p>
-    <footer>&copy; hola</footer>
+   <!-- <button onclick="mostrarPuntos()">Mostrar Lista</button>
+    <ul id="puntuacion"></ul>/-->
+    
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Puntaje</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    
+
+    
 </body>
 
 </html>
