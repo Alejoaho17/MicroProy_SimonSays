@@ -12,13 +12,17 @@ a:hover {color: darkgoldenrod; font-weight: bold;}
 
 table {
     width: 50%;
+    margin: 0 auto; 
+    border: 1px solid black;
     border-collapse: collapse;
 }
 th, td {
+    text-align: center;
     border: 1px solid black;
     padding: 10px;
-    text-align: left;
+    
 }
 th {
+    text-align: center;
     background-color: #f2f2f2;
 }

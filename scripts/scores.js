@@ -1,26 +1,3 @@
-function mostrarPuntos() {
-    let lista = document.getElementById("puntuacion");
-
-    // Obtener los datos desde localStorage
-    let usuariosGuardados = localStorage.getItem("puntuaciones");
-
-    if (usuariosGuardados) {
-        let usuarios = JSON.parse(usuariosGuardados); // Convertir a array
-
-        // Limpiar la lista antes de agregar elementos
-        lista.innerHTML = "";
-
-        // Recorrer y mostrar cada usuario
-        usuarios.forEach(usuario => {
-            let item = document.createElement("li");
-            item.textContent = `Puntaje: ${usuario.puntos} - Usuario: ${usuario.nombre}`;
-            lista.appendChild(item);
-        });
-    } else {
-        lista.innerHTML = "<li>No hay usuarios guardados.</li>";
-    }
-}
-
 function mostrarTabla() {
     let tbody = document.querySelector("#tabla tbody");
 
@@ -29,6 +6,7 @@ function mostrarTabla() {
 
     if (usuariosGuardados) {
         let usuarios = JSON.parse(usuariosGuardados);
+        usuarios.sort((a,b)=> b.puntos - a.puntos)
 
         // Limpiar tabla antes de agregar nuevos datos
         tbody.innerHTML = "";
@@ -45,6 +23,7 @@ function mostrarTabla() {
     } else {
         tbody.innerHTML = "<tr><td colspan='3'>No hay usuarios guardados.</td></tr>";
     }
+
+  
 }
 
- 

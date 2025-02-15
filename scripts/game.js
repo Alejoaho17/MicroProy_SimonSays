@@ -29,7 +29,21 @@ function gameLost(){
         puntuaciones = JSON.parse(puntuaciones)
     }
 
-    puntuaciones.push({nombre:name, puntos:puntos})
+    let modificar = true
+
+    for (let i=0; i<puntuaciones.length;i++){
+        if (puntuaciones[i].nombre == name) {
+            if (puntuaciones[i].puntos < puntos) {
+                puntuaciones[i].puntos = puntos
+            }
+            modificar = false
+            break
+        }
+    }
+
+    if(modificar){puntuaciones.push({nombre:name, puntos:puntos})}
+
+
 
     localStorage.setItem("puntuaciones",JSON.stringify(puntuaciones))
     
@@ -43,7 +57,8 @@ function comprobarSecuencia(){
     console.log("secuenciajugador", secuencia_jugador)
     for(let i = 0; i< secuencia_jugador.length; i++){
         if(secuencia_jugador[i] !== secuencia[i]){
-            
+            const audio = new Audio("../sounds/success-1-6297.mp3")
+            audio.play()
             gameLost()
         }
     }
