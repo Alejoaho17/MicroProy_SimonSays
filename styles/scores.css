@@ -1,9 +1,10 @@
 body{
-    background-color: antiquewhite;
+    background-color: #dce6f3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     h1{text-align: center;
         border-color: darkorange;
     }
+    
     
 }
 
@@ -26,3 +27,9 @@ th {
     text-align: center;
     background-color: #f2f2f2;
 }
+
+a:link {color: orange; text-decoration: none;}
+a:hover {color: darkgoldenrod; font-weight: bold;}
+a {color:#35689e}
+
+.menu {font-size: 30px; background-color: #e2bb58; padding-right: 2%;}

@@ -21,3 +21,9 @@
     margin-bottom: 28px;
   }
 }
+
+a:link {color: orange; text-decoration: none;}
+a:hover {color: darkgoldenrod; font-weight: bold;}
+a {color:#35689e}
+
+.menu {font-size: 30px; background-color: #e2bb58; padding-right: 2%;}

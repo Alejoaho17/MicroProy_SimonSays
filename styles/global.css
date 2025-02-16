@@ -6,7 +6,7 @@ body {
   width: 100vw;
 }
 
-.normal-button {
+.normal-button, .reset-button{
   font-size: 16px;
   font-weight: 600;
   background-color: #dedede;

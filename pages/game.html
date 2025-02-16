@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="../styles/game.css" />
   </head>
   <body>
+
+    <div class="menu">
+    <img src="../images/Logo-footer.png"><br>
     <a href = "../index.html">Menu</a>
     <a href = "../pages/name.html">Jugar</a>
     <a href = "../pages/scores.html">Puntuacion</a>
+    </div>
+
     <section class="game-container">
 
       <h1 class="game-title">Simon Dice:</h1>
@@ -27,10 +32,12 @@
         <p id="puntos" >0</p>
       </div>
 
-      <button id="play-button" class="normal-button" onclick="reproducirSecuencia()"> Reproducir secuencia </button>
+      <br><br><button id="play-button" class="normal-button" onclick="reproducirSecuencia()"> Reproducir secuencia </button>
+      <button  onclick="window.location.href = '../pages/game.html';">Reiniciar</button>
     </section>
   </body>
   <script src="../scripts/game.js" ></script>
+  
 </html>
 
 
